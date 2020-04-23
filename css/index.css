@@ -136,6 +136,12 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+@media (max-width: 800px) {
+  html,
+  body {
+    background-color: #96ceb4;
+  }
+}
 html {
   font-size: 62.5%;
   background-color: #ffeead;
@@ -149,6 +155,13 @@ html {
   background-color: #ff6f69;
   padding-top: 2rem;
 }
+@media screen and (max-width: 800px) {
+  .sideBar {
+    height: 20rem;
+    float: none;
+    width: 100%;
+  }
+}
 .sideBar nav {
   display: flex;
   flex-direction: column;
@@ -160,6 +173,13 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .sideBar nav ul.topNav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 .sideBar nav ul.topNav li {
   background-color: #88d8b0;
@@ -182,7 +202,7 @@ html {
 }
 .container {
   max-width: 800px;
-  margin: 2rem 18rem;
+  margin: 5rem 20rem;
   border: solid black 1px;
   background-color: #96ceb4;
 }
@@ -202,12 +222,18 @@ html {
 .container div.topInfo {
   padding-bottom: 2rem;
 }
-.container div.topInfo p {
+.container div.topInfo p.boutme {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
+}
+@media (max-width: 800px) {
+  .container div.topInfo p.boutme {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 .container div.PJ {
   display: flex;
@@ -227,6 +253,13 @@ html {
 .container div.PJ a {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 800px) {
+  .container div.PJ {
+    margin: 0 20rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .container div.midSection {
   display: flex;
@@ -296,4 +329,12 @@ html {
   padding: 1rem;
   text-align: center;
   font-family: "Oswald", sans-serif;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: 20rem auto;
+    border: 0px;
+  }
 }
