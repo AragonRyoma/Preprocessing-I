@@ -181,12 +181,25 @@ html {
     justify-content: space-evenly;
   }
 }
+@media screen and (max-width: 500px) {
+  .sideBar nav ul.topNav {
+    margin: 5rem auto;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .sideBar nav ul.topNav li {
   background-color: #88d8b0;
   border: solid black 1px;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .sideBar nav ul.topNav li {
+    border-radius: 0;
+    background-color: #ffeead;
+  }
 }
 .sideBar nav ul.topNav li a {
   text-decoration: none;
@@ -336,5 +349,10 @@ html {
     height: 100%;
     margin: 20rem auto;
     border: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 30rem auto;
   }
 }

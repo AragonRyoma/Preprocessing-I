@@ -198,10 +198,20 @@ html {
         justify-content: space-evenly;
       }
 
+      @media screen and (max-width: 500px) {
+        margin: 5rem auto;
+        flex-direction: column;
+        width: 100%;
+      }
+
       li {
         background-color: #88d8b0;
-
         .navbutton();
+
+        @media screen and (max-width: 500px) {
+          border-radius: 0;
+          background-color: #ffeead;
+        }
 
         a {
           text-decoration: none;
@@ -383,5 +393,8 @@ html {
     height: 100%;
     margin: 20rem auto;
     border: 0px;
+  }
+  @media screen and (max-width: 500px) {
+    margin: 30rem auto;
   }
 }
