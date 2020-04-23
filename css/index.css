@@ -133,29 +133,27 @@ table {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 html {
   font-size: 62.5%;
+  background-color: #ffeead;
 }
 .sideBar {
   height: 100%;
-  /* Full-height: remove this if you want "auto" height */
   width: 16rem;
-  /* Set the width of the sidebar */
   position: fixed;
-  /* Fixed Sidebar (stay in place on scroll) */
   top: 0;
-  /* Stay at the top */
   left: 0;
-  background-color: lightgray;
-  /* Black */
+  background-color: #ff6f69;
   padding-top: 2rem;
 }
 .sideBar nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70%;
+  height: 60%;
 }
 .sideBar nav ul.topNav {
   display: flex;
@@ -163,7 +161,22 @@ html {
   justify-content: space-evenly;
   height: 100%;
 }
+.sideBar nav ul.topNav li {
+  background-color: #88d8b0;
+  border: solid black 1px;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.sideBar nav ul.topNav li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
 .sideBar img {
+  border-radius: 0 50% 50% 50%;
+  border: black solid 1px;
   height: 10rem;
   width: 10rem;
 }
@@ -171,18 +184,116 @@ html {
   max-width: 800px;
   margin: 2rem 18rem;
   border: solid black 1px;
+  background-color: #96ceb4;
+}
+.container div.topSection h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+}
+.container div.topSection h3 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 10rem;
+  padding-bottom: 2rem;
+}
+.container div.topInfo {
+  padding-bottom: 2rem;
+}
+.container div.topInfo p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+.container div.PJ {
+  display: flex;
+  justify-content: space-around;
+}
+.container div.PJ div.pjportrait {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.container div.PJ img {
+  height: 30rem;
+  width: 16rem;
+  padding-bottom: 1rem;
+}
+.container div.PJ a {
+  text-decoration: none;
+  color: black;
 }
 .container div.midSection {
   display: flex;
   justify-content: space-between;
 }
+.container div.midSection div.skills {
+  border: solid black 1px;
+  border-left: 0.5px;
+}
+.container div.midSection div.skills h3 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.container div.midSection div.skills ul {
+  padding-left: 0.2rem;
+  list-style: square;
+  list-style-position: inside;
+}
+.container div.midSection div.skills ul li {
+  padding: 0.8rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+.container div.midSection div.workHistory {
+  border: solid black 1px;
+  border-left: 0.5px;
+  border-right: 0.5px;
+}
+.container div.midSection div.workHistory h3 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.container div.midSection div.workHistory ul {
+  padding-left: 0.2rem;
+  list-style: square;
+  list-style-position: inside;
+}
+.container div.midSection div.workHistory ul li {
+  padding: 0.8rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
 .container footer {
   border: solid black 1px;
-  height: 50px;
+  border-top: 0.5px;
+  border-left: 0.5px;
+  border-right: 0.5px;
+  height: 10rem;
 }
 .container footer nav.mediaLinks {
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.container footer nav.mediaLinks a {
+  text-decoration: none;
+  color: black;
+  background-color: #ff6f69;
+  font-size: 1.5rem;
+  border: solid black 1px;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
 }
